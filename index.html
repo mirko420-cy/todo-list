@@ -7,16 +7,30 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>📝 Lista de Tareas</h1>
-    <div class="form">
+  <main class="container">
+    <header>
+      <h1>📝 Lista de Tareas</h1>
+    </header>
+
+    <section class="form">
       <input type="text" id="tareaInput" placeholder="Escribí una tarea..." />
+      <input type="datetime-local" id="vencimientoInput" />
       <button id="agregarBtn">Agregar</button>
-    </div>
-    <ul id="listaTareas"></ul>
-  </div>
+    </section>
+    
+
+
+    <section class="filters">
+      <button id="todosBtn">Ver todas</button>
+      <button id="completadasBtn">Ver completadas</button>
+      <button id="pendientesBtn">Ver pendientes</button>
+    </section>
+
+    <ul id="listaTareas">
+      <li id="noTareas" class="no-tareas">No hay tareas pendientes.</li>
+    </ul>
+  </main>
 
   <script src="script.js"></script>
 </body>
 </html>
-
